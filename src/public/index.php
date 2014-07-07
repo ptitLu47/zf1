@@ -7,4 +7,4 @@ define("PUBLIC_PATH", SRC_PATH.DS."public");
 define("VENDOR_PATH", ROOT_PATH.DS."vendor");
 
 require_once ROOT_PATH.DS.'vendor'.DS.'autoload.php';
-echo "plop";
+echo "lala";
