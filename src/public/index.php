@@ -18,7 +18,7 @@ if("development" === APP_ENV){
     set_error_handler(array('\Iplib\Error', 'handlerError')); // erreur php
 }
 
-// $autoloader = Zend_Loader_Autoloader::getInstance(); ---> plus besoin puisqu'on l'a ajouter dans composer.json
+//$autoloader = Zend_Loader_Autoloader::getInstance(); ---> plus besoin puisqu'on l'a ajouter dans composer.json
 
 $application = new Zend_Application(
         APP_ENV,
