@@ -1,1 +1,15 @@
+<?php $this->headTitle("Page d'accueil")?>
+
 <h1>Index</h1>
+
+<button id="test">TEST JS</button>
+
+<script>
+    <?php $this->inlineScript()->captureStart()?>
+    $(document).ready(function(){
+        $('#test').on('click', function(){
+            alert('JS OK');
+        });
+    });
+    <?php $this->inlineScript()->captureEnd()?>
+</script>
