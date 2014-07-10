@@ -13,6 +13,14 @@ class Core_Model_DbTable_Article extends Zend_Db_Table_Abstract
             'refColumns' => array("categorie_id"),
             "onUpdate" => self::CASCADE,
             "onDelete" => self::RESTRICT
+        ),
+
+        'FK_auteur' => array(
+            'columns' =>array("auteur_id"),
+            'refTableClass' => "Core_Model_DbTable_Auteur",
+            'refColumns' => array("auteur_id"),
+            "onUpdate" => self::CASCADE,
+            "onDelete" => self::RESTRICT
         )
     );
 

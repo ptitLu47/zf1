@@ -26,7 +26,7 @@ class Core_Service_Blog{
        // $sql = "SELECT * FROM article ORDER BY article_id DESC LIMIT $count";
 
         $mapper = new Core_Model_Mapper_Article();
-        $articles = $mapper->fetchAll();
+        $articles = $mapper->fetchAll(null, 'article_id DESC', $count);
 
         return $articles;
     }
@@ -46,5 +46,11 @@ class Core_Service_Blog{
         $article = $mapper->find($articleId);
 
         return $article;
+    }
+
+    public function saveArticle(Core_Model_Article $article)
+    {
+        $mapper = new Core_Model_Mapper_Article();
+        $mapper->save($article);
     }
 }

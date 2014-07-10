@@ -1,3 +1,4 @@
 <h1><?= $this->article->getTitle()?></h1>
-<h5>Dans la catégorie <strong><?= $this->article->getCategorie()->getName()?></strong></h5>
+<h5>Dans la catégorie <strong><?= $this->article->getCategorie()->getName()?></strong><br/>
+Ecrit par <strong><?= $this->article->getAuteur()->getName()?></strong></h5>
 <?= $this->article->getContent()?>

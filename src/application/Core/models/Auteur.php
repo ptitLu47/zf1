@@ -1,15 +1,7 @@
 <?php
-
-class Core_Model_Categorie
+class Core_Model_Auteur
 {
-    /**
-     * @var number
-     */
     private $id;
-
-    /**
-     * @var string
-     */
     private $name;
 
     /**
@@ -46,10 +38,6 @@ class Core_Model_Categorie
         return $this->name;
     }
 
-    public function getArticles()
-    {
-        return $this->articles;
-    }
 
     public function setArticles(array $articles)
     {
@@ -62,4 +50,6 @@ class Core_Model_Categorie
         $this->articles[] = $article;
         return $this;
     }
+
+
 }

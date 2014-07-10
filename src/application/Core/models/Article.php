@@ -23,6 +23,28 @@ class Core_Model_Article
     private $categorie;
 
     /**
+     * @var number
+     */
+    private $auteur;
+
+    /**
+     * @param number $auteur
+     */
+    public function setAuteur($auteur)
+    {
+        $this->auteur = $auteur;
+        return $this;
+    }
+
+    /**
+     * @return number
+     */
+    public function getAuteur()
+    {
+        return $this->auteur;
+    }
+
+    /**
      * @param number $categorie
      * Core_Model_Categorie
      */
