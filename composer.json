@@ -13,6 +13,9 @@
        "psr-0" : {
            "Iplib" : "./library/ip"
        }
-
+    },
+    "require-dev": {
+        "phpunit": "3.5.15"
     }
+
 }

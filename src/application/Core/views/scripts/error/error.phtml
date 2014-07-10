@@ -1,1 +1,10 @@
 <h1>Erreur</h1>
+
+<p><?= $this->message ?></p>
+
+<?php if ("development" === APP_ENV) : ?>
+<p><?= $this->exception->getMessage() ?></p>
+<pre><?= $this->exception->getTraceAsString() ?></pre>
+<?php endif; ?>
+
+<?= APP_ENV;?>
