@@ -18,11 +18,35 @@ class Core_Model_Article
     private $content;
 
     /**
+     * @var number
+     */
+    private $categorie;
+
+    /**
+     * @param number $categorie
+     * Core_Model_Categorie
+     */
+    public function setCategorie(Core_Model_Categorie $categorie)
+    {
+        $this->categorie = $categorie;
+        return $this;
+    }
+
+    /**
+     * @return number
+     */
+    public function getCategorie()
+    {
+        return $this->categorie;
+    }
+
+    /**
      * @param string $content
      */
     public function setContent($content)
     {
         $this->content = $content;
+        return $this;
     }
 
     /**
@@ -39,6 +63,7 @@ class Core_Model_Article
     public function setId($id)
     {
         $this->id = $id;
+        return $this;
     }
 
     /**
@@ -55,6 +80,7 @@ class Core_Model_Article
     public function setTitle($title)
     {
         $this->title = $title;
+        return $this;
     }
 
     /**
